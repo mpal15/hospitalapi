@@ -3,7 +3,7 @@ require('./config/mongoose');
 
 var app = express();
 
-var port = 8000;
+var port = 8000 || process.env.port;
 const passport = require('passport');
 const passportJWT = require('./config/passport-jwt-strategy');
 
